@@ -1,0 +1,629 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+.body{
+    display: flex;
+    background-color:rgb(50, 242, 82, .1);
+    flex-direction: row;
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(50, 242, 82, .8);
+    padding: 1em 0;
+    color: rgb(50, 56, 47);
+    height: 10vh;
+}
+
+.userIcon{
+    height: 4em;
+    width: 4em;
+}
+
+.userInfo{
+    background-color: rgb(50, 242, 82, .1);
+    height: 90vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(50, 56, 47);
+}
+
+.userInfoCard{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+    width: 80%;
+    height: 60%;
+}
+
+.userInfo > h1{
+    margin-top: 1em;
+}
+
+.userInfoIcon{
+    height: 12em;
+    width: 12em;
+}
+
+.randomBtn{
+    border: none;
+    border-radius: none;
+    background-color: rgb(50, 242, 82);
+    padding: 1em;
+    margin: .5em;
+    font-weight: bolder;
+    color: rgb(50, 56, 47);
+    width: 60%
+}
+
+.randomBtn:hover{
+    background-color: rgb(50, 242, 82, .5);
+    box-shadow: 0 0 10px rgb(50, 242, 82, .5);
+}
+
+.randomBtn:active{
+    outline: none;
+    color: #fff;
+}
+
+.randomBtn:focus{
+    outline: none;
+}
+
+.userNameInput{
+    border: none;
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+    padding: .5em;
+    width: 80%;
+    text-align: center;
+}
+
+.center{
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.composeWrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    background-color: rgb(50, 242, 82, .1);
+    padding: 1em;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.composeFooter{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.composeBtn{
+    padding: 1em;
+    /* margin: .25em .5em; */
+    border: none;
+}
+
+.composeBtn:hover{
+    background-color: rgb(50, 242, 82, .5);
+    box-shadow: 0 0 10px rgb(50, 242, 82, .5);
+}
+
+.composeBtn:active{
+    outline: none;
+    color: #fff;
+}
+
+.composeBtn:focus{
+    outline: none;
+}
+
+.composeMsg{
+    border: none;
+    resize: none;
+    padding: .25em .5em;
+}
+
+.composeMsg:focus{
+    outline: none;
+}
+
+.postArea{
+    overflow: scroll;
+    width: 60%;
+}
+
+.post{
+    width: 100%;
+    display: flex;
+    padding: .5em;
+    background-color: rgb(50, 242, 82, .4);
+    justify-content: space-between;
+    margin: .5em 0;
+}
+
+.postBody{
+    padding: 0 .5em;
+    width: 60%;
+}
+.postBodyHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+}
+
+.postBtns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.postBtns > button{
+    width: 60%;
+    height: 2em;
+    margin: .5em;
+    border: none;
+    background-color: rgb(50, 242, 82);
+}
+
+.postBtns > button:hover{
+    background-color: rgb(128, 245, 147, .5); 
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+}
+
+.postBtns > button:active{
+    color: #fff;
+}
+
+.postImg{
+    width: 20%;
+}
+
+.postBtnsArea{
+    width: 20%
+}
+
+.postText{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: .5em .25em;
+}
+
+.postTextEdit{
+    resize: none;
+    border: none;
+    width: 100%;
+    padding: .5em;
+}
+
+.searchWrapper{
+    width: 20vw;
+    height: 90vh;
+    background-color: rgb(128, 245, 147, .1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.searchWrapper > h1{
+    margin: 1em 0;
+}
+
+.searchBarWrapper{
+    background-color: #fff;
+    margin: .5em;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.searchBar{
+    border: none;
+    width: 100%;
+    padding: .5em 0;
+}
+
+.searchBar:focus{
+    outline: none;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .body{
+        display: flex;
+        background-color:rgb(50, 242, 82, .1);
+        flex-direction: column;
+    } 
+    .userInfo{
+        background-color: rgb(50, 242, 82, .1);
+        height: 90vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(50, 56, 47);
+    }
+    
+    .userIcon{
+        height: 4em;
+        width: 4em;
+    }
+    
+    .userInfo{
+        background-color: rgb(50, 242, 82, .1);
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(50, 56, 47);
+    }
+    
+    .userInfoCard{
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(50, 242, 82);
+        width: 80%;
+        height: 70%;
+    }
+    
+    .userInfo > h1{
+        margin-top: 1em;
+    }
+    
+    .userInfoIcon{
+        height: 10em;
+        width: 10em;
+    } 
+
+    .center{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .composeWrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1em;
+        background-color: rgb(50, 242, 82, .1);
+        padding: 1em;
+        border-radius: 10px;
+        width: 100%;
+        /* align-items: center; */
+    }
+
+    .postArea{
+        height: auto;
+        width: 100%;
+    }
+
+    .searchWrapper{
+        width: 100vw;
+        height: auto;
+        background-color: rgb(128, 245, 147, .1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+}
+/* 
+
+.userInfo{
+    background-color: rgb(50, 242, 82, .1);
+    height: 90vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(50, 56, 47);
+}
+
+.userIcon{
+    height: 4em;
+    width: 4em;
+}
+
+.userInfo{
+    background-color: rgb(50, 242, 82, .1);
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(50, 56, 47);
+}
+
+.userInfoCard{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+    width: 80%;
+    height: 60%;
+}
+
+.userInfo > h1{
+    margin-top: 1em;
+}
+
+.userInfoIcon{
+    height: 4em;
+    width: 4em;
+}  */
+
+/* 
+
+.header{
+    text-align: center;
+    background-color: rgb(50, 242, 82, .8);
+    padding: 1em 0;
+    color: rgb(50, 56, 47);
+    height: 10vh;
+}
+
+.userIcon{
+    height: 4em;
+    width: 4em;
+}
+
+
+
+
+
+.userInfo{
+    background-color: rgb(50, 242, 82, .1);
+    height: 90vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(50, 56, 47);
+}
+
+.userInfoCard{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+    width: 80%;
+    height: 60%;
+}
+
+.userInfo > h1{
+    margin-top: 1em;
+}
+
+.userInfoIcon{
+    height: 12em;
+    width: 12em;
+}
+
+.randomBtn{
+    border: none;
+    border-radius: none;
+    background-color: rgb(50, 242, 82);
+    padding: 1em;
+    margin: .5em;
+    font-weight: bolder;
+    color: rgb(50, 56, 47);
+    width: 60%
+}
+
+.randomBtn:hover{
+    background-color: rgb(50, 242, 82, .5);
+    box-shadow: 0 0 10px rgb(50, 242, 82, .5);
+}
+
+.randomBtn:active{
+    outline: none;
+    color: #fff;
+}
+
+.randomBtn:focus{
+    outline: none;
+}
+
+.userNameInput{
+    border: none;
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+    padding: .5em;
+    width: 80%;
+    text-align: center;
+}
+
+.center{
+    height: 90vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.composeWrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    background-color: rgb(50, 242, 82, .1);
+    padding: 1em;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.composeFooter{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.composeBtn{
+    padding: 1em;
+    border: none;
+}
+
+.composeBtn:hover{
+    background-color: rgb(50, 242, 82, .5);
+    box-shadow: 0 0 10px rgb(50, 242, 82, .5);
+}
+
+.composeBtn:active{
+    outline: none;
+    color: #fff;
+}
+
+.composeBtn:focus{
+    outline: none;
+}
+
+.composeMsg{
+    border: none;
+    resize: none;
+    padding: .25em .5em;
+}
+
+.composeMsg:focus{
+    outline: none;
+}
+
+.postArea{
+    overflow: scroll;
+    width: 60%;
+}
+
+.post{
+    width: 100%;
+    display: flex;
+    padding: .5em;
+    background-color: rgb(50, 242, 82, .4);
+    justify-content: space-between;
+    margin: .5em 0;
+}
+
+.postBody{
+    padding: 0 .5em;
+    width: 60%;
+}
+.postBodyHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+}
+
+.postBtns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.postBtns > button{
+    width: 60%;
+    height: 2em;
+    margin: .5em;
+    border: none;
+    background-color: rgb(50, 242, 82);
+}
+
+.postBtns > button:hover{
+    background-color: rgb(128, 245, 147, .5); 
+    box-shadow: 0 0 10px rgb(50, 242, 82);
+}
+
+.postBtns > button:active{
+    color: #fff;
+}
+
+.postImg{
+    width: 20%;
+}
+
+.postBtnsArea{
+    width: 20%
+}
+
+.postText{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: .5em .25em;
+}
+
+.postTextEdit{
+    resize: none;
+    border: none;
+    width: 100%;
+    padding: .5em;
+}
+
+.searchWrapper{
+    width: 20vw;
+    height: 90vh;
+    background-color: rgb(128, 245, 147, .1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.searchWrapper > h1{
+    margin: 1em 0;
+}
+
+.searchBarWrapper{
+    background-color: #fff;
+    margin: .5em;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.searchBar{
+    border: none;
+    width: 100%;
+    padding: .5em 0;
+}
+
+.searchBar:focus{
+    outline: none;
+} */
