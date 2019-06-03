@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import randomItems from './randomItems'
+import Button from './Button';
 
 export default class UserInfo extends Component{
     constructor(props){
@@ -47,11 +48,11 @@ export default class UserInfo extends Component{
                             placeholder="userName"
                             className="userNameInput"
                             value={this.props.userName} />
-                    <button
-                        className="randomBtn"
-                        onClick={this.randomize}>
+                    <Button
+                        classprop="randomBtn"
+                        randomize={this.randomize}>
                         Randomize!
-                    </button>
+                    </Button>
                 </div>
             </div>
         )
